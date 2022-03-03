@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        
+
+        .menu-level-10 a {
+            color: #CC9036;
+        }
+
+        .menu-level-10 .item-menu-level-10 {
+            display: inline-block;
+        }
+
+        .menu-level-10 .item-menu-level-10 .title-item-menu-level-10 {
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .menu-level-10 .item-menu-level-10:hover .menu-level-2 {
+            display: block;
+        }
+
+        
+
+        .menu-level-2 {
+            position: absolute;
+            background-color: white;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            display: none;
+        }
+
+        .menu-level-2 a {
+            color: #444;
+        }
+
+        .menu-level-2 .item-menu-level-2 {
+            padding: 10px 0;
+        }
+
+        .menu-level-2 .item-menu-level-2 .title-item-menu-level-2:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu-level-10">
+        <li class="item-menu-level-10">
+            <a href="#" class="title-item-menu-level-10">VN</a>
+            <ul class="menu-level-2">
+                <li class="item-menu-level-2">
+                    <a href="#" class="title-item-menu-level-2">Tiếng việt</a>
+                </li>
+                <li class="item-menu-level-2">
+                    <a href="#" class="title-item-menu-level-2">English</a>
+                </li>
+            </ul>
+        </li>
+        
+    </ul>
+</body>
+</html>
